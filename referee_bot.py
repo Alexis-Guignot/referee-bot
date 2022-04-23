@@ -5,9 +5,8 @@ import os
 
 token = os.environ.get('BOT_TOKEN')
 
-intents = discord.Intents.default()
-bot = commands.Bot(command_prefix=".", intents=intents)
-client = discord.Client()
+intents = discord.Intents.all()
+client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
