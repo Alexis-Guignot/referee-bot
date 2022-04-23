@@ -1,1 +1,1 @@
-worker: referee_bot.py
+worker: python ./referee_bot.py
