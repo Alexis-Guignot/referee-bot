@@ -1,6 +1,9 @@
 import discord
 import os
 import texttable
+import os
+
+token = os.environ.get('BOT_TOKEN')
 
 client = discord.Client()
 
@@ -64,5 +67,5 @@ def get_color(reaction):
 	if (emoji == '🟩'):
 		return 'green'
 
-f = open('./tkn.env', 'r')
-client.run(f.read())
+token = os.environ.get('BOT_TOKEN')
+client.run(token)
